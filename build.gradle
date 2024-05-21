@@ -8,7 +8,7 @@ plugins {
 group = 'com.bekaku.api.spring'
 version = '1.0.0'
 java {
-    sourceCompatibility = '21'
+    sourceCompatibility = '17'
 }
 
 configurations {
@@ -51,6 +51,8 @@ dependencies {
     implementation 'org.jetbrains:annotations:24.1.0'
 //    Databases
     implementation 'com.mysql:mysql-connector-j:8.3.0'
+    implementation 'org.mariadb.jdbc:mariadb-java-client:3.3.0'
+
     implementation 'com.zaxxer:HikariCP:5.1.0'
     implementation 'com.google.code.findbugs:jsr305:3.0.2'
 

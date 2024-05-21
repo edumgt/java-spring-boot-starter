@@ -25,10 +25,10 @@ spring:
     #    url: jdbc:mysql://${MYSQL_HOST:my.mysqlserver.com}:13537/springboot_bekaku?allowPublicKeyRetrieval=true&useSSL=false
     #    url: jdbc:mysql://${MYSQL_HOST:localhost}:3308/super_synapse?allowPublicKeyRetrieval=true&useSSL=false
     #    Docker mysql network
-    url: jdbc:mysql://${MYSQL_HOST:YOUR_PRODUCTION_SERVER}:3306/spring_starter?allowPublicKeyRetrieval=true&useSSL=false
+    url: jdbc:mariadb://127.0.0.1:3306/springboot?allowPublicKeyRetrieval=true&useSSL=false
     username: root
-    password: 'pwd'
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: 123456
+    driver-class-name: org.mariadb.jdbc.Driver
     hikari:
       #maximum number of milliseconds that a client will wait for a connection
       connection-timeout: 30000
